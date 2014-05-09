@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gcc -I/usr/include  -O2  lab2.c -o ./lin/lab2-auto  -floop-parallelize-all -ftree-parallelize-loops=4 -lgsl -lgslcblas -lm
+

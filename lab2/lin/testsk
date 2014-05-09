@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for j in {2..20}
+do
+echo "программа  $j"
+	for ((i=250; i<=500; i=i+25))
+	do
+   	echo "параметр $i"
+   	./lab2-seq $i
+	done
+done

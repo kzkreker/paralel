@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm -rf ./lin
+mkdir ./lin
+gcc -I/usr/include  -O2 -Wall -Werror  lab1.c -o ./lin/lab-seq -lgsl  -pthread -lgslcblas -lm
+

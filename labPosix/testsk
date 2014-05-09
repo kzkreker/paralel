@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for j in {2..20}
+do
+echo "программа  $j"
+	for ((i=0; i<=500; i=i+50))
+	do
+   	echo "параметр $i"
+   	./lab-par/lab1-par-$j $i
+	done
+done

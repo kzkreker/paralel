@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for ((i=0; i<=500; i=i+50))
+do
+	echo "параметр $i"
+	./lin/lab-seq $i
+done
+

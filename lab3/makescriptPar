@@ -1,0 +1,10 @@
+#!/bin/bash
+
+rm -rf ./lab-par
+mkdir ./lab-par 
+
+for i in {1..20}
+do
+   echo "$i"
+   gcc -I/usr/include  -O2 -Wall -Werror -floop-parallelize-all -ftree-parallelize-loops=$i lab1.c -o ./lab-par/lab1-par-$i -lgsl -lgslcblas -lm
+done

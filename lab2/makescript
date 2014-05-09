@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gcc -I/usr/include  -O2 -Wall -Werror  lab2.c -o ./lin/lab2-seq -lgsl -lgslcblas -lm -fopenmp
+
